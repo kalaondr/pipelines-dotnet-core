@@ -26,7 +26,7 @@ steps:
     - script: ls $(Build.ArtifactStagingDirectory)
 
     - task: AzureWebApp@1
-  inputs:
-    azureSubscription: 'Azure Ondrej Kala'
-    appName: 'testing'
-    package: $(System.DefaultWorkingDirectory)/**/*.zip  
+      inputs:
+          azureSubscription: 'b9d9efbb-a164-4387-a179-c35ee3a0a32e'
+          appName: 'testing'
+          package: $(System.DefaultWorkingDirectory)/**/*.zip
