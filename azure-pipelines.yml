@@ -23,4 +23,4 @@ steps:
           arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)'
           zipAfterPublish: True
 
-    - script: echo $(Build.ArtifactStagingDirectory)
+    - script: ls $(Build.ArtifactStagingDirectory)
