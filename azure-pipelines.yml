@@ -27,6 +27,6 @@ steps:
 
     - task: AzureWebApp@1
       inputs:
-          azureSubscription: 'b9d9efbb-a164-4387-a179-c35ee3a0a32e'
+          azureSubscription: 'Azure Ondrej Kala'
           appName: 'testing'
           package: $(System.DefaultWorkingDirectory)/**/*.zip
