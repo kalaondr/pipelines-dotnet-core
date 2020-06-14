@@ -27,6 +27,6 @@ steps:
 
     - task: AzureWebApp@1
       inputs:
-          azureSubscription: 'Azure Ondrej Kala'
+          azureSubscription: 'AzureRM'
           appName: 'testing'
           package: $(System.DefaultWorkingDirectory)/**/*.zip
