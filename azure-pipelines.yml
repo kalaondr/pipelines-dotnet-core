@@ -24,3 +24,9 @@ steps:
           zipAfterPublish: True
 
     - script: ls $(Build.ArtifactStagingDirectory)
+
+    - task: AzureWebApp@1
+  inputs:
+    azureSubscription: 'Azure Ondrej Kala'
+    appName: 'testing'
+    package: $(System.DefaultWorkingDirectory)/**/*.zip  
